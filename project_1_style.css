@@ -14,42 +14,26 @@ body{
     background-color: #283D3B !important;
 }
 
-#errorWindow{
-    background-color: #283D3B !important;
-    border-color: 	  #283D3B !important;
-}
-
 h2{
     color: #00ff00;
 }
 
+p{
+    color: #00ff00;
+    font-family: "Verdana" !important;
+}
+
 #moveMe{
+    /*Everything except footnote*/
     position: relative !important;
     left:	  85px;
 }
 
-.jumbotron{
-    color: #00ff00 !important;
-    background-color: #395236 !important;
-    text-align:		  center;
-    font-family:	  "Verdana" !important;
-
-}
-
 #colorMe{
+    /*For the radio buttons*/
     color: #00ff00;
     font-family: "Verdana";
 }
-
-.glyphicon{
-    color: 		#00ff00 !important;
-    font-size:	50px;
-    position: 	relative !important;
-    top:		-80px !important;
-    left: 		31px;
-
-}
-
 
 #button{
     position: relative !important;
@@ -61,7 +45,21 @@ h2{
     top:	  100px;
 }
 
-p{
-    color: #00ff00;
-    font-family: "Verdana" !important;
+.jumbotron{
+    color: #00ff00 !important;
+    background-color: #395236 !important;
+    text-align:		  center;
+    font-family:	  "Verdana" !important;
+
 }
+
+.glyphicon{
+    color: 		#00ff00 !important;
+    font-size:	50px;
+    position: 	relative !important;
+    top:		-80px !important;
+    left: 		31px;
+}
+
+
+

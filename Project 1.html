@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="project_1_style.css">
     <script type="text/javascript" src="project_1_javascript.js"></script>
 
+    <!---Below are the three links for bootstrap compatibility--->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -12,21 +13,25 @@
 
 <body>
 <div class="container">
+
+    <!---jumbotron title--->
     <div class="jumbotron">
         <h2>Morse code encryptor/decryptor</h2>
     </div>
-    <div id="moveMe">
-        <textarea id="userTextArea" rows="10" cols="50"></textarea>
+
+    <div id="moveMe"><!---This div is for moving all the elements aside from the jumbotron and footnote at the same time-->
+        <textarea id="userTextArea" rows="10" cols="50"></textarea> <!--Text area for the user's input-->
 
         <span class="glyphicon glyphicon-arrow-right"></span>
         <button onclick="start()" id="button">Do it!</button>
 
-        <textarea id="outputTextArea" rows="10" cols="50"></textarea>
+        <textarea id="outputTextArea" rows="10" cols="50"></textarea> <!--Text area for the output-->
 
 
 
 
         <br>
+        <!--Radio button form to switch from encrypt to decrypt. Encrypt is checked automatically-->
         <form>
             <div id="colorMe">
                 <input id="encryptButton" type="radio" name="choice" value="Encrypt" checked="checked">Encrypt</input><br>
@@ -37,12 +42,16 @@
 
 
     </div>
-    <div id="moveDown">
+
+    <div id="moveDown"> <!--This is the "footnote" div, and everything gets moved in unison-->
         <hr>
 			<p>Fork me on </p>
 			<a href="https://github.com/JPAnderson/WebDev_Project_1"><b>GitHub</b></a>
 
     </div>
 </div>
+
+</body>
+</html>
 
 
