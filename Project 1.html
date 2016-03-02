@@ -2,129 +2,47 @@
 <html>
 <head>
     <title>Translate Morse!</title>
+    <link rel="stylesheet" type="text/css" href="project_1_style.css">
+    <script type="text/javascript" src="project_1_javascript.js"></script>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-<h2>Morse code encryptor/decryptor</h2>
+<div class="container">
+    <div class="jumbotron">
+        <h2>Morse code encryptor/decryptor</h2>
+    </div>
+    <div id="moveMe">
+        <textarea id="userTextArea" rows="10" cols="50"></textarea>
 
-	<textarea id="userTextArea" rows="10" cols="50">
-	</textarea>
+        <span class="glyphicon glyphicon-arrow-right"></span>
+        <button onclick="start()" id="button">Do it!</button>
 
-<button onclick="start()">Do it!</button>
-<script>
-    function start(){
+        <textarea id="outputTextArea" rows="10" cols="50"></textarea>
 
-        var textToChange = document.getElementById("userTextArea").innerHTML;
-        var userTextArrayed = textToChange.split("");
-        var morseArray = [];
 
-        for(var i = 0; i <= userTextArrayed.length; i++){
-            convert(userTextArrayed(i.toUpperCase));
-        }
 
-        var outputText = morseArray.join();
-        var outPutBox = document.getElementById("outputTextArea");
-        outPutBox.innerHTML = outputText;
 
-        function convert(letter){
-            var morse;
-            switch(letter){
-                case "A":
-                    morse = ".-";
-                    break
-                case "B":
-                    morse = "-...";
-                    break
-                case "C":
-                    morse = "-.-.";
-                    break
-                case "D":
-                    morse = "-..";
-                    break
-                case "E":
-                    morse = ".";
-                    break
-                case "F":
-                    morse = "..-.";
-                    break
-                case "G":
-                    morse = "--.";
-                    break
-                case "H":
-                    morse = "....";
-                    break
-                case "I":
-                    morse = "..";
-                    break
-                case "J":
-                    morse = ".---";
-                    break
-                case "K":
-                    morse = "-.-";
-                    break
-                case "L":
-                    morse = ".-..";
-                    break
-                case "M":
-                    morse = "--";
-                    break
-                case "N":
-                    morse = "-.";
-                    break
-                case "O":
-                    morse = "---";
-                    break
-                case "P":
-                    morse = ".--.";
-                    break
-                case "Q":
-                    morse = "--.-";
-                    break
-                case "R":
-                    morse = ".-.";
-                    break
-                case "S":
-                    morse = "...";
-                    break
-                case "T":
-                    morse = "-";
-                    break
-                case "U":
-                    morse = "..-";
-                    break
-                case "V":
-                    morse = "...-";
-                    break
-                case "W":
-                    morse = ".--";
-                    break
-                case "X":
-                    morse = "-..-";
-                    break
-                case "Y":
-                    morse = "-.--";
-                    break
-                case "Z":
-                    morse = "--..";
-                    break
-                case " ":
-                    morse = " ";
-                    break
-                default:
-                    morse = "";
-            }
+        <br>
+        <form>
+            <div id="colorMe">
+                <input id="encryptButton" type="radio" name="choice" value="Encrypt" checked="checked">Encrypt</input><br>
+                <input id="decryptButton" type="radio" name="choice" value="Decrypt">Decrypt</input>
+            </div>
+        </form>
 
-            morseArray.push(morse);
-        }
-    }
+        
 
-</script>
-	<textarea id="outputTextArea" rows="10" cols="50">
-	</textarea>
+    </div>
+    <div id="moveDown">
+        <hr>
+			<span><p>Fork me on </p>
+			<a href="https://github.com/JPAnderson/WebDev_Project_1"><b>GitHub</b></a>\
+			</span>
+    </div>
+</div>
 
-<br>
-<form>
-    <input type="radio" name="choice" value="Encrypt">Encrypt</input><br>
-    <input type="radio" name="choice" value="Decrypt">Decrypt</input>
-</form>
 

@@ -1,0 +1,67 @@
+textarea{
+    background-color: #1a1a1a;
+    border-color: 	  #00ff00;
+    border-width:	  3px;
+    color:		 	  #00ff00 !important;
+    font-family: 	  "Courier new" !important;
+    padding:		  5px !important;
+    margin:			  auto !important;
+    resize:			  none;
+
+}
+
+body{
+    background-color: #283D3B !important;
+}
+
+#errorWindow{
+    background-color: #283D3B !important;
+    border-color: 	  #283D3B !important;
+}
+
+h2{
+    color: #00ff00;
+}
+
+#moveMe{
+    position: relative !important;
+    left:	  85px;
+}
+
+.jumbotron{
+    color: #00ff00 !important;
+    background-color: #395236 !important;
+    text-align:		  center;
+    font-family:	  "Verdana" !important;
+
+}
+
+#colorMe{
+    color: #00ff00;
+    font-family: "Verdana";
+}
+
+.glyphicon{
+    color: 		#00ff00 !important;
+    font-size:	50px;
+    position: 	relative !important;
+    top:		-80px !important;
+    left: 		30px;
+
+}
+
+
+#button{
+    position: relative !important;
+    right:	  25px;
+}
+
+#moveDown{
+    position: relative;
+    top:	  100px;
+}
+
+p{
+    color: #00ff00;
+    font-family: "Verdana" !important;
+}
