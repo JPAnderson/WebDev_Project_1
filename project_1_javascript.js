@@ -1,9 +1,5 @@
 
-function clear(){
-    console.log("reached me!");
-    document.getElementsById("userTextArea").value = "";
 
-}
 
 function start(){
     console.log("1");
